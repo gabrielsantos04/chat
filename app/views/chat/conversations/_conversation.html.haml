@@ -11,7 +11,7 @@
     .chat__glance-name-date
       .name
         - if conversation.users.to_a.size > 2
-          Group Chat
+          Chat em grupo
         - else
           = conversation.users.where.not(id: current_user.id).first.first_name
       .flex
