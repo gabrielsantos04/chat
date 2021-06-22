@@ -5,6 +5,6 @@
 %div
   = form_for [chat, @conversation, Chat::Message.new], remote: true do |f|
     = material_icon.insert_photo.css_class("chat__insert-image")
-    = f.text_area :text, placeholder: 'Send message...', autocomplete: 'off'
+    = f.text_area :text, placeholder: 'Enviando mensagem...', autocomplete: 'off'
     %span.bar
     = f.file_field :image
